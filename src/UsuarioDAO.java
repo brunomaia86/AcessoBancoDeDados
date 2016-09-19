@@ -20,8 +20,7 @@ public class UsuarioDAO {
 	public static List<Usuario> todosUsuarios() {
 		List<Usuario> todos = new ArrayList<>();
 
-		try (Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/usuarios", "postgres",
-				"postgres")) {
+		try (Connection c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/usuarios", "postgres","postgres")) {
 
 			String sql = "select login, nome, email from usuario";
 			PreparedStatement stm = c.prepareStatement(sql);
