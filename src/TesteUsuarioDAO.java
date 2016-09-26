@@ -1,6 +1,5 @@
 import static org.junit.Assert.assertEquals;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import org.dbunit.Assertion;
